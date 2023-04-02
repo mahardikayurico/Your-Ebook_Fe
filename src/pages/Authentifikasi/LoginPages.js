@@ -121,7 +121,7 @@ export default function LoginPages() {
               <div className="flex justify-center my-5">
                 <button
                   type="submit"
-                  className="bg-[#5F2EEA] text-white font-bold py-2 w-[343px] h-[65px] w-full rounded-xl"
+                  className="bg-gray-300 text-gray-900 font-bold py-2 w-[343px] h-[65px] w-full rounded-xl"
                 >
                   Sign in
                 </button>

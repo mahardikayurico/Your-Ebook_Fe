@@ -1,5 +1,11 @@
 import "./index.css";
-import { LandingPages, LoginPages, WelcomePages } from "./pages";
+import {
+  LandingPages,
+  LoginPages,
+  WelcomePages,
+  HomePages,
+  EbookCollection,
+} from "./pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -9,6 +15,8 @@ function App() {
         <Route path="/" element={<LandingPages />} />
         <Route path="/login" element={<LoginPages />} />
         <Route path="/welcome" element={<WelcomePages />} />
+        <Route path="/home" element={<HomePages />} />
+        <Route path="/myebook" element={<EbookCollection />} />
       </Routes>
     </BrowserRouter>
   );
