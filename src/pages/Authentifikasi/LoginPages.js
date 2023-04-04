@@ -24,6 +24,7 @@ export default function LoginPages() {
       .then((res) => {
         console.log(res.data.data);
         localStorage.setItem("@userLogin", JSON.stringify(res.data.data));
+        localStorage.setItem("@userId", res.data.data.user.id);
         Swal.fire({
           position: "top-end",
           icon: "success",
@@ -33,7 +34,7 @@ export default function LoginPages() {
         });
 
         // alert(res.data.message);
-        navigate("/");
+        navigate("/welcome");
       })
       .catch((err) => {
         setValidate({ error: true, message: err.response.data.message });

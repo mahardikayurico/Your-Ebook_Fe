@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<LandingPages />} />
         <Route path="/login" element={<LoginPages />} />
         <Route path="/welcome" element={<WelcomePages />} />
-        <Route path="/home" element={<HomePages />} />
+        <Route path="/home/:id" element={<HomePages />} />
         <Route path="/myebook" element={<EbookCollection />} />
       </Routes>
     </BrowserRouter>
